@@ -63,7 +63,7 @@ export default function ContactPage() {
                           Email
                         </p>
                         <a
-                          href="mailto:info@wawalerhorseproject.org.au"
+                          href="mailto:info@walerhorseproject.org.au"
                           className="font-body text-deep-brown/85 transition-colors hover:text-ochre"
                         >
                           info@wawalerhorseproject.org.au
