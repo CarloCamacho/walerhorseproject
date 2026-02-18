@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Container from "@/components/layout/Container";
-import SectionHeading from "@/components/shared/SectionHeading";
 import ProductGrid from "@/components/shop/ProductGrid";
 import Button from "@/components/shared/Button";
 import { products } from "@/lib/products";
@@ -14,14 +13,24 @@ export const metadata: Metadata = {
 export default function ShopPage() {
   return (
     <>
-      {/* Page Header */}
-      <section className="bg-parchment pb-16 pt-32">
-        <Container>
-          <SectionHeading
-            title="Shop for the Cause"
-            subtitle="Every purchase directly supports our efforts to save Waler horses. Thank you for making a difference."
-          />
-        </Container>
+      {/* Hero Banner */}
+      <section
+        className="relative flex min-h-[40vh] items-center justify-center overflow-hidden"
+        style={{
+          backgroundImage: "url('/images/horses/waler-portrait-1.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative z-10 px-4 text-center">
+          <h1 className="font-heading text-4xl font-bold text-white sm:text-5xl lg:text-6xl [text-shadow:0_2px_12px_rgba(0,0,0,0.85),0_4px_24px_rgba(0,0,0,0.6)]">
+            Shop for the Cause
+          </h1>
+          <p className="mx-auto mt-4 max-w-2xl font-body text-lg text-white/90 [text-shadow:0_1px_8px_rgba(0,0,0,0.8)]">
+            Every purchase directly supports our efforts to save Waler horses. Thank you for making a difference.
+          </p>
+        </div>
       </section>
 
       {/* Products */}

@@ -17,7 +17,7 @@ export const SOCIAL_LINKS = {
 } as const;
 
 export const DONATE_URL =
-  process.env.NEXT_PUBLIC_GOFUNDME_URL || "https://gofundme.com";
+  process.env.NEXT_PUBLIC_GOFUNDME_URL || "https://www.gofundme.com/f/wa-waler-horse-project";
 
 export const SNIPCART_API_KEY =
   process.env.NEXT_PUBLIC_SNIPCART_API_KEY || "";
